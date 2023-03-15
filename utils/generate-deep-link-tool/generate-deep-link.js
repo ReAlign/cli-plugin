@@ -11,7 +11,9 @@ const generateDeepLink = ({ appId, startPagePath, startPageQuery }) => {
   const pars = {
     appId,
     startPagePath: _.btoa(startPagePath),
-    startPageQuery: _.btoa(startPageQuery),
+    ...startPageQuery ? {
+      startPageQuery: _.btoa(startPageQuery),
+    } : {},
   }
   const parsStr = Object.keys(pars)
     .reduce((prev, item) => {

@@ -24,4 +24,11 @@ module.exports = {
       startPageQuery: `articleId=${id}`,
     })
   },
+  followers(uid) {
+    return generateDeepLink({
+      appId: BUZZ_APP_ID,
+      startPagePath: 'pages/followers/index',
+      startPageQuery: `uid=${uid}`,
+    })
+  },
 }
