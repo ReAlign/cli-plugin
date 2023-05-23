@@ -1,0 +1,22 @@
+{
+  "name": "cli-plugin",
+  "version": "0.0.1",
+  "description": "Plugin of CLI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReAlign/cli-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReAlign/cli-plugin/issues"
+  },
+  "homepage": "https://github.com/ReAlign/cli-plugin#readme",
+  "dependencies": {
+    "tinycolor2": "^1.6.0"
+  }
+}
