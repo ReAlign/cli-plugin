@@ -1,5 +1,6 @@
 const {
   buzz,
+  buzzUsername,
   httpsServe,
   proSearch,
   colorConvert,
@@ -13,6 +14,14 @@ module.exports = [
     desc: 'Buzz DeepLink',
     fn: (scene, params/*, cmd, { logBox, chalk } */) => {
       buzz(scene, params)
+    },
+  },
+  {
+    cmd: 'buzz-username <uid>',
+    alias: 'buzz-un',
+    desc: 'Buzz Username',
+    fn: (uid/*, cmd, { logBox, chalk } */) => {
+      buzzUsername(uid)
     },
   },
   {
